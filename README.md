@@ -1,0 +1,2 @@
+# HK_VideoPlayerDemo
+使用IJKMediaFramework做视频列表播
