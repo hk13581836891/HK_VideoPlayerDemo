@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7YG-Uc-WAS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--视频列表-->
+        <scene sceneID="NiJ-42-7Ag">
+            <objects>
+                <viewController id="d8R-uB-05w" customClass="VideoListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aSV-dE-5en">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="xVV-gc-aB0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="视频列表" id="hoh-bP-OCZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5uA-it-dBy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625" y="253"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xjb-xr-1KC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7YG-Uc-WAS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dfx-A5-6Wo">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="d8R-uB-05w" kind="relationship" relationship="rootViewController" id="Tf2-k1-37d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wH7-Ee-6OS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-234" y="240"/>
+        </scene>
+    </scenes>
+</document>
